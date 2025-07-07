@@ -4,25 +4,25 @@ on:
     inputs:
       KERNEL_SUFFIX:
         description: '内核名称修改(可改中文和emoji)'
-        required: true
+        required: false
         default: '-xiaoxiaow'
       KERNEL_TIME:
        description: "内核构建日期更改(默认为原厂)"
-       required: true
+       required: false
        default: 'Tue Dec 17 23:36:49 UTC 2024'
       enable_feature_x:
        description: "是否启用kpm"
-       required: false
+       required: true
        default: false
        type: boolean
       enable_feature_y:
        description: "是否启用lz4kd"
-       required: false
+       required: true
        default: false
        type: boolean
       enable_feature_z:
        description: "是否添加风驰驱动"
-       required: false
+       required: true
        default: false
        type: boolean
 
